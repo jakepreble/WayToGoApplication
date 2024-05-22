@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "DriverApp",
+    "slug": "DriverApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "expo": {
+      "plugins": [
+        [
+          "expo-location",
+          {
+            "locationAlwaysAndWhenInUsePermission": "Allow $(WayToGo) to use your location."
+          }
+        ]
+      ]
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.WayToGo.DriverApp",
+      "config":{
+        "googleMapsApiKey": "AIzaSyDmmkHiNKjZgHtuJAUbhTerAvcORt3jBIA",
+        
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Location Permission",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Location permission"
+      }
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
